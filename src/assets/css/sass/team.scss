@@ -1,10 +1,14 @@
 #meet-the-team {
-  text-align: center;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 100px, 0px, 50px, 0px;
 
   .team-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1.5rem;
+    gap: 35px;
     margin: 0 auto;
 
     .person-card {
@@ -26,25 +30,6 @@
       .text-container {
         display: flex;
         flex-direction: column;
-      }
-    }
-
-    // Responsiva breakpoints
-    @media (max-width: 900px) {
-      .team-grid .person-card {
-        grid-column: span 4; // 3 per rad
-      }
-    }
-
-    @media (max-width: 600px) {
-      .team-grid .person-card {
-        grid-column: span 6; // 2 per rad
-      }
-    }
-
-    @media (max-width: 400px) {
-      .team-grid .person-card {
-        grid-column: span 12; // 1 per rad
       }
     }
   }
