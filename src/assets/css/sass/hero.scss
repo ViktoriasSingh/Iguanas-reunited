@@ -42,3 +42,23 @@ br.spaced {
   display: block;
   margin-bottom: 24px;
 }
+
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 4rem 0;
+
+    .content-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: flex-end;
+        padding-top: 2rem;
+    }
+
+    .content-column {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
