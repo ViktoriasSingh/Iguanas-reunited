@@ -18,15 +18,14 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 
 .info-block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 0;
-  padding: 64px;
+  padding: 0px 64px 0px 64px;
 }
 
 .story {
