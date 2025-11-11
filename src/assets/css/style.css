@@ -572,36 +572,38 @@ body {
   overflow: hidden;
 }
 
+/*------ FOOTER (LUFTIG VERSION) ------*/
+
 #footer {
   width: 100%;
   background-color: #fff;
-  padding: 120px 0 80px; /* ökat avstånd upptill */
+  padding: 120px 0 80px;
   font-family: "Open Sans", sans-serif;
   color: #000;
-  position: relative; /* krävs för ::before-linjen */
+  position: relative;
 
-  /* --- LINJE I ÖVERKANT --- */
+  /* linje i överkant som går kant till kant */
   &::before {
     content: "";
     position: absolute;
-    top: 60px; /* justera höjd på linjen (testa 50–80px) */
+    top: 60px; /* hur långt ner linjen ligger */
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw; /* gör att linjen går kant till kant */
+    width: 100vw; /* hela fönstrets bredd */
     height: 1px;
     background-color: #e0e0e0;
   }
 
   .footer-inner {
-    max-width: 1400px; /* håller ihop layouten snyggt */
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 120px; /* större avstånd mellan kolumner */
-    flex-wrap: nowrap; /* håll kolumnerna på samma rad om möjligt */
-    position: relative; /* så innehållet ligger över linjen */
-    z-index: 1;
+    gap: 120px; /* mycket luft mellan kolumnerna */
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 1; /* så texten hamnar ovanpå linjen */
   }
 
   .footer-column {
