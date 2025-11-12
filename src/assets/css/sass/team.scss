@@ -4,9 +4,6 @@
   flex-direction: column;
   gap: 35px;
   padding: 100px 0px 50px 0px;
-  @media (max-width: 678px) {
-    padding: 100px 48px 50px 48px;
-  }
 
   .team-grid {
     display: grid;
@@ -65,7 +62,9 @@
 
   @media (max-width: 400px) {
     .team-grid .person-card {
-      grid-column: span 12; // 1 kort per rad
+      grid-column: span 6; // 2 kort per rad
+      max-width: 100%;
+      align-items: center;
     }
   }
 }
