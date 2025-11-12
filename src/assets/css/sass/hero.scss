@@ -19,6 +19,11 @@
   justify-content: space-between;
   gap: 1rem;
   padding-top: 5vh;
+  @media (max-width: 678px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 .info-block {
@@ -26,6 +31,10 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 0px 64px 0px 64px;
+  @media (max-width: 678px) {
+    justify-content: flex-start;
+    min-width: 30vw;
+  }
 }
 
 .story {
@@ -44,21 +53,21 @@ br.spaced {
 }
 
 #contact-section {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 4rem 0;
+
+  .content-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 2rem;
+  }
+
+  .content-column {
     display: flex;
     flex-direction: column;
-    padding: 2rem 0 4rem 0;
-
-    .content-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; 
-        align-items: flex-end;
-        padding-top: 2rem;
-    }
-
-    .content-column {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
+    gap: 2rem;
+  }
 }
