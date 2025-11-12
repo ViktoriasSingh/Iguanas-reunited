@@ -572,8 +572,6 @@ body {
   overflow: hidden;
 }
 
-/*------ FOOTER (LUFTIG VERSION) ------*/
-
 #footer {
   width: 100%;
   background-color: #fff;
@@ -582,14 +580,13 @@ body {
   color: #000;
   position: relative;
 
-  /* linje i överkant som går kant till kant */
   &::before {
     content: "";
     position: absolute;
-    top: 60px; /* hur långt ner linjen ligger */
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw; /* hela fönstrets bredd */
+    width: 100vw;
     height: 1px;
     background-color: #e0e0e0;
   }
@@ -600,10 +597,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 120px; /* mycket luft mellan kolumnerna */
+    gap: 120px;
     flex-wrap: nowrap;
     position: relative;
-    z-index: 1; /* så texten hamnar ovanpå linjen */
+    z-index: 1;
   }
 
   .footer-column {
