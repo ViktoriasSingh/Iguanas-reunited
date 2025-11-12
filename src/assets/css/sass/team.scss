@@ -3,13 +3,14 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
-  padding: 100px, 0px, 50px, 0px;
+  padding: 100px 0px 50px 0px;
 
   .team-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 35px;
     margin: 0 auto;
+    justify-items: flex-start;
 
     .person-card {
       grid-column: span 2;
@@ -17,13 +18,20 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 11px;
+      justify-content: space-between;
+      max-width: 175px;
 
       .image-container {
         position: relative;
+        object-fit: cover;
+        width: 100%; /* gör att bilden fyller containerns bredd */
+        height: 100%;
+        overflow: hidden;
 
         img {
           width: 100%;
-          height: auto;
+          height: 100%;
+          object-fit: cover;
           display: block;
         }
       }
@@ -31,6 +39,30 @@
         display: flex;
         flex-direction: column;
       }
+    }
+  }
+  /* 📱 Responsiva regler */
+  @media (max-width: 1200px) {
+    .team-grid .person-card {
+      grid-column: span 3; // 4 kort per rad
+    }
+  }
+
+  @media (max-width: 900px) {
+    .team-grid .person-card {
+      grid-column: span 4; // 3 kort per rad
+    }
+  }
+
+  @media (max-width: 600px) {
+    .team-grid .person-card {
+      grid-column: span 6; // 2 kort per rad
+    }
+  }
+
+  @media (max-width: 400px) {
+    .team-grid .person-card {
+      grid-column: span 12; // 1 kort per rad
     }
   }
 }
