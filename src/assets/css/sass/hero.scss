@@ -22,7 +22,6 @@
   @media (max-width: 678px) {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
     justify-content: flex-start;
   }
 }
@@ -34,6 +33,7 @@
   padding: 0px 64px 0px 64px;
   @media (max-width: 678px) {
     justify-content: flex-start;
+    min-width: 30vw;
   }
 }
 
