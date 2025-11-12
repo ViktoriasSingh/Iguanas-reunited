@@ -64,7 +64,7 @@
     .team-grid .person-card {
       grid-column: span 6; // 2 kort per rad
       max-width: 100%;
-      align-items: center;
+      align-items: flex-start;
     }
   }
 }
