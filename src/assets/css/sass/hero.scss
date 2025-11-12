@@ -31,6 +31,9 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 0px 64px 0px 64px;
+  @media (max-width: 678px) {
+    justify-content: flex-start;
+  }
 }
 
 .story {
