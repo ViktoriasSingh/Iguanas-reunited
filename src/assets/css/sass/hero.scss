@@ -50,10 +50,8 @@
   }
 }
 
-br.spaced::after {
-  content: "";
-  display: block;
-  margin-bottom: 24px;
+p + p {
+  margin-top: 24px;
 }
 
 #contact-hero {
