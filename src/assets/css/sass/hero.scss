@@ -44,7 +44,10 @@
 .story-block {
   display: flex;
   flex-direction: column;
-  padding: 64px;
+  padding: 64px 0;
+  @media (max-width: 678px) {
+    padding: 64px 48px;
+  }
 }
 
 br.spaced {
