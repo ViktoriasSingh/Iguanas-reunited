@@ -24,6 +24,13 @@
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+  @media (max-width: 2560px) {
+    display: flex;
+    max-width: 60vw;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }
 
 .info-block {
@@ -40,6 +47,8 @@
 .story {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 64px 0;
 }
 .story-block {
   display: flex;
@@ -47,6 +56,13 @@
   padding: 64px 0;
   @media (max-width: 678px) {
     padding: 64px 48px;
+  }
+  @media (max-width: 2560px) {
+    display: flex;
+    max-width: 60vw;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 }
 
