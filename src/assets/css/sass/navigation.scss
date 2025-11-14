@@ -142,3 +142,90 @@
     } /*Close ul*/
   } /*Close nav#menu*/
 } /*Close #header*/
+
+/*------FOOTER-----*/
+
+#footer {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 0 40px;
+  position: relative;
+}
+
+#footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+#footer .footer-inner {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 4%;
+  row-gap: 16px;
+  text-align: left;
+}
+
+#footer .footer-column {
+  min-width: 150px;
+}
+
+#footer .footer-column h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+#footer .footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-column li + li {
+  margin-top: 4px;
+}
+
+/* Textstycken i footern */
+#footer .footer-column p {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+/* Copyright-kolumnen */
+#footer .footer-copy {
+  font-size: 12px;
+  opacity: 0.7;
+  align-self: flex-end;
+}
+
+@media (max-width: 900px) {
+  #footer .footer-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 6%;
+    row-gap: 20px;
+  }
+}
+
+/* Responsiv – 1 kolumn på små mobiler */
+@media (max-width: 600px) {
+  #footer {
+    padding: 40px 0 30px;
+  }
+
+  #footer .footer-inner {
+    grid-template-columns: 1fr;
+    width: 92%;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+}
