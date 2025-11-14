@@ -142,7 +142,7 @@ h2 {
 
 /*------LINKS-----*/
 a {
-  color: #2a5db0;
+  color: #161b22;
   text-decoration: none;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -155,7 +155,7 @@ a {
 a:hover,
 a:active,
 a:visited {
-  color: #16315e;
+  color: #11151b;
   text-decoration: none;
 }
 
@@ -535,7 +535,7 @@ html {
 }
 
 body {
-  width: 90%;
+  width: 100%;
   overflow-x: hidden;
   display: block;
   clear: both;

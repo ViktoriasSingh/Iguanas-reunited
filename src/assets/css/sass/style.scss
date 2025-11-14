@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  width: 90%;
+  width: 100%;
   overflow-x: hidden;
   display: block;
   clear: both;
@@ -61,6 +61,9 @@ body {
 
 /*------FOOTER-----*/
 
-#footer {
-  width: 100%;
+
+main {
+  width: 90vw;
+  margin: 0 5%;
+  background-color: aqua;
 }

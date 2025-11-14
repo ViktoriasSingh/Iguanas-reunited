@@ -19,7 +19,7 @@
   justify-content: space-between;
   gap: 1rem;
   padding-top: 6vh;
-  width: 90vw;
+  width: 100%;
   @media (max-width: 678px) {
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +55,7 @@
   display: flex;
   flex-direction: column;
   padding: 64px 0;
-  width: 90vw;
+  width: 100%;
   @media (max-width: 678px) {
     padding: 64px 24px 24px 24px;
   }
@@ -73,16 +73,9 @@ p + p {
 }
 
 #contact-hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   height: 50vh;
-  width: 120%;
-  padding: 0;
-  margin-left: -10%;
-  margin-top: -2%;
-  padding-top: 0;
+  width: 100%;
+  margin-top: -1%;
   background-image: url("../../image/call.png");
   background-size: cover;
   background-position: center;
