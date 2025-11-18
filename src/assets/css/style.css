@@ -184,7 +184,7 @@ a:visited {
 #header h1 {
   vertical-align: middle;
   display: inline-block;
-  padding: 0 5%;
+  padding: 0 8%;
   font-size: 35px;
   font-size: 2.1875rem;
   line-height: 40px;
@@ -253,6 +253,7 @@ a:visited {
   vertical-align: middle;
   font-weight: bold;
   margin: 0 1%;
+  padding: 0 0 0 3.5%;
   font-family: "Playfair Display", serif;
   font-size: 20px;
   font-size: 1.25rem;
