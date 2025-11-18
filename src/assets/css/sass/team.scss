@@ -7,7 +7,7 @@
 
   .team-grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 35px;
     margin: 0 auto;
     justify-items: flex-start;
@@ -20,6 +20,7 @@
       gap: 11px;
       justify-content: space-between;
       max-width: 100%;
+      min-width: 0; /* Tillåter grid att krympa card */
 
       .image-container {
         position: relative;
@@ -65,6 +66,23 @@
       grid-column: span 6; // 2 kort per rad
       max-width: 100%;
       align-items: flex-start;
+    }
+  }
+  @media (max-width: 900px) {
+    .team-grid {
+      gap: 25px; /* mindre gap */
+    }
+  }
+
+  @media (max-width: 600px) {
+    .team-grid {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .team-grid {
+      gap: 15px;
     }
   }
 }
